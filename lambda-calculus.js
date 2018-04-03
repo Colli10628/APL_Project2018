@@ -1,15 +1,3 @@
-<html>
-	<head>
-		<title>APL Group Project 2017-2018 Sem 2</title>
-	</head>
-	<body>
-		<h1>Lambda Calculus</h1>
-	<h2>Please enter a simple expression such as 4 + 3 - 2</h2>
-	<input type="string" id="expression" name="LambdaExpression">
-	<button onclick="calculate()">Generate</button>
-	 <div id="equation"></div>
-	 <script>
-
 const lam = 'λ';
 
 function nextLetter(s){
@@ -58,8 +46,5 @@ for(i = 0; i < numbers.length; i++){
   for (count = 0; count < numLamda; count++) {
      expression += ')' + numbers[count];
   }
-document.getElementById("equation").innerHTML = expression;
+document.getElementById("equation").value = expression;
 };
-</script>
-	</body>
-</html>
